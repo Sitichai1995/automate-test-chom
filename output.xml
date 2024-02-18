@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.3 on win32)" generated="20240218 16:48:11.056" rpa="false" schemaversion="3">
+<suite id="s1" name="Session2" source="C:\Users\User\Desktop\anan\automate-test-chom\automate-test-chom\session2.robot">
+<test id="s1-t1" name="open_browser" line="11">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=${web}</arg>
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 16:48:11.408" level="INFO">Opening browser 'gc' to base url 'https://www.nejavu.com'.</msg>
+<msg timestamp="20240218 16:48:15.756" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 16:48:15.756" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 111
+Current browser version is 121.0.6167.185 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0107DCE3]
+	(No symbol) [0x010139D1]
+	(No symbol) [0x00F24DA8]
+	(No symbol) [0x00F44F6C]
+	(No symbol) [0x00F40D11]
+	(No symbol) [0x00F3ED19]
+	(No symbol) [0x00F715AE]
+	(No symbol) [0x00F7129C]
+	(No symbol) [0x00F6ACC6]
+	(No symbol) [0x00F46F68]
+	(No symbol) [0x00F480CD]
+	GetHandleVerifier [0x012F3832+2506274]
+	GetHandleVerifier [0x01329794+2727300]
+	GetHandleVerifier [0x0132E36C+2746716]
+	GetHandleVerifier [0x01126690+617600]
+	(No symbol) [0x0101C712]
+	(No symbol) [0x01021FF8]
+	(No symbol) [0x010220DB]
+	(No symbol) [0x0102C63B]
+	BaseThreadInitThunk [0x76647BA9+25]
+	RtlInitializeExceptionChain [0x7729BD2B+107]
+	RtlClearBits [0x7729BCAF+191]
+</msg>
+<status status="FAIL" starttime="20240218 16:48:11.406" endtime="20240218 16:48:15.830"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 16:48:15.831" endtime="20240218 16:48:15.831"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 16:48:15.832" endtime="20240218 16:48:15.832"/>
+</kw>
+<status status="FAIL" starttime="20240218 16:48:11.404" endtime="20240218 16:48:15.832">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 111
+Current browser version is 121.0.6167.185 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0107DCE3]
+	(No symbol) [0x010139D1]
+	(No symbol) [0x00F24DA8]
+	(No symbol) [0x00F44F6C]
+	(No symbol) [0x00F40D11]
+	(No symbol) [0x00F3ED19]
+	(No symbol) [0x00F715AE]
+	(No symbol) [0x00F7129C]
+	(No symbol) [0x00F6ACC6]
+	(No symbol) [0x00F46F68]
+	(No symbol) [0x00F480CD]
+	GetHandleVerifier [0x012F3832+2506274]
+	GetHandleVerifier [0x01329794+2727300]
+	GetHandleVerifier [0x0132E36C+2746716]
+	GetHandleVerifier [0x01126690+617600]
+	(No symbol) [0x0101C712]
+	(No symbol) [0x01021FF8]
+	(No symbol) [0x010220DB]
+	(No symbol) [0x0102C63B]
+	BaseThreadInitThunk [0x76647BA9+25]
+	RtlInitializeExceptionChain [0x7729BD2B+107]
+	RtlClearBits [0x7729BCAF+191]
+</status>
+</test>
+<status status="FAIL" starttime="20240218 16:48:11.059" endtime="20240218 16:48:15.841"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Session2">Session2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
