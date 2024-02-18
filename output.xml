@@ -1,78 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.3 on win32)" generated="20240218 23:36:56.813" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.8.3 on win32)" generated="20240218 23:50:30.443" rpa="false" schemaversion="3">
 <suite id="s1" name="Session2" source="C:\Users\User\Desktop\anan\automate-test-chom\automate-test-chom\session2.robot">
-<test id="s1-t1" name="open_browser" line="18">
+<test id="s1-t1" name="open_browser" line="22">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${web}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240218 23:36:57.090" level="INFO">Opening browser 'gc' to base url 'https://www.nejavu.com'.</msg>
-<status status="PASS" starttime="20240218 23:36:57.090" endtime="20240218 23:37:07.666"/>
+<msg timestamp="20240218 23:50:30.739" level="INFO">Opening browser 'gc' to base url 'https://www.nejavu.com'.</msg>
+<status status="PASS" starttime="20240218 23:50:30.738" endtime="20240218 23:50:37.309"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240218 23:37:07.667" endtime="20240218 23:37:07.993"/>
+<status status="PASS" starttime="20240218 23:50:37.309" endtime="20240218 23:50:37.432"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${modal}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240218 23:37:07.998" endtime="20240218 23:37:08.091"/>
+<status status="PASS" starttime="20240218 23:50:37.433" endtime="20240218 23:50:37.465"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${close_modal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240218 23:37:08.092" level="INFO">Clicking element '//*[@id="top"]/main/div[2]/div[1]/a'.</msg>
-<status status="PASS" starttime="20240218 23:37:08.091" endtime="20240218 23:37:08.170"/>
+<msg timestamp="20240218 23:50:37.468" level="INFO">Clicking element '//*[@id="top"]/main/div[2]/div[1]/a'.</msg>
+<status status="PASS" starttime="20240218 23:50:37.466" endtime="20240218 23:50:37.625"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${cartoon_tab}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240218 23:37:08.173" level="INFO">Clicking element '//*[@id="top"]/main/div[1]/div[2]/div[2]/div[2]/nav/div/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20240218 23:37:08.171" endtime="20240218 23:37:18.075"/>
+<msg timestamp="20240218 23:50:37.626" level="INFO">Clicking element '//*[@id="top"]/main/div[1]/div[2]/div[2]/div[2]/nav/div/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20240218 23:50:37.625" endtime="20240218 23:50:45.292"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <arg>${cartoon_head}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240218 23:37:18.076" endtime="20240218 23:37:18.098"/>
+<status status="PASS" starttime="20240218 23:50:45.293" endtime="20240218 23:50:45.314"/>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
-<var>${book_title}</var>
+<var>${book_title1}</var>
 <arg>${cartoon_name_1}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20240218 23:37:18.131" level="INFO">${book_title} = สายใยครั้งนั้นกับทานตะวันมิหวนคืน เล่ม 1</msg>
-<status status="PASS" starttime="20240218 23:37:18.098" endtime="20240218 23:37:18.131"/>
+<msg timestamp="20240218 23:50:45.346" level="INFO">${book_title1} = สายใยครั้งนั้นกับทานตะวันมิหวนคืน เล่ม 1</msg>
+<status status="PASS" starttime="20240218 23:50:45.314" endtime="20240218 23:50:45.346"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${book_title}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20240218 23:37:18.132" level="INFO">สายใยครั้งนั้นกับทานตะวันมิหวนคืน เล่ม 1</msg>
-<status status="PASS" starttime="20240218 23:37:18.131" endtime="20240218 23:37:18.132"/>
+<kw name="Get Text" library="Selenium2Library">
+<var>${book_title2}</var>
+<arg>${cartoon_name_2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240218 23:50:45.372" level="INFO">${book_title2} = ฝันดีนะ ปุนปุน เล่ม 9</msg>
+<status status="PASS" starttime="20240218 23:50:45.346" endtime="20240218 23:50:45.372"/>
 </kw>
-<kw name="Get Element Count" library="Selenium2Library">
-<var>${rows}</var>
-<arg>${all_cartoon}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20240218 23:37:18.149" level="INFO">${rows} = 1</msg>
-<status status="PASS" starttime="20240218 23:37:18.132" endtime="20240218 23:37:18.149"/>
+<kw name="Get Text" library="Selenium2Library">
+<var>${book_title3}</var>
+<arg>${cartoon_name_3}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240218 23:50:45.419" level="INFO">${book_title3} = รักล้นใจของยัยสาวเมด เล่ม 8</msg>
+<status status="PASS" starttime="20240218 23:50:45.372" endtime="20240218 23:50:45.419"/>
 </kw>
-<kw name="Get Element Count" library="Selenium2Library">
-<var>${box}</var>
-<arg>${box_cartoon}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20240218 23:37:18.440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20240218 23:37:18.440" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+<kw name="Get Text" library="Selenium2Library">
+<var>${book_title4}</var>
+<arg>${cartoon_name_4}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240218 23:50:45.451" level="INFO">${book_title4} = Trillion Game เกมชีวิตพิชิตล้านล้าน เล่ม 4</msg>
+<status status="PASS" starttime="20240218 23:50:45.419" endtime="20240218 23:50:45.451"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${book_title5}</var>
+<arg>${cartoon_name_5}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240218 23:50:45.487" level="INFO">${book_title5} = DRAGON BALL ดราก้อนบอล เล่ม 41</msg>
+<status status="PASS" starttime="20240218 23:50:45.453" endtime="20240218 23:50:45.487"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240218 23:50:45.489" level="INFO">Clicking element '//*[@id="quick-cart-button"]'.</msg>
+<msg timestamp="20240218 23:50:47.000" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240218 23:50:47.001" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="quick-cart-button" type="submit" class="btn-bordered-1st round df aic jcc"&gt;...&lt;/button&gt; is not clickable at point (368, 677). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
   (Session info: chrome=121.0.6167.185)
 Stacktrace:
 	GetHandleVerifier [0x0099E123+48179]
 	(No symbol) [0x00925D01]
 	(No symbol) [0x0080D72D]
-	(No symbol) [0x00811980]
-	(No symbol) [0x008134B2]
-	(No symbol) [0x00813540]
-	(No symbol) [0x00845489]
-	(No symbol) [0x0084586B]
-	(No symbol) [0x0087C5EC]
-	(No symbol) [0x00863CD4]
+	(No symbol) [0x0084AF2B]
+	(No symbol) [0x00849637]
+	(No symbol) [0x0084768B]
+	(No symbol) [0x00846826]
+	(No symbol) [0x0083D770]
+	(No symbol) [0x00863C8C]
+	(No symbol) [0x0083D1AE]
+	(No symbol) [0x00863F24]
 	(No symbol) [0x0087AA1E]
 	(No symbol) [0x00863A26]
 	(No symbol) [0x0083B7BC]
@@ -89,36 +105,53 @@ Stacktrace:
 	RtlInitializeExceptionChain [0x7729BD2B+107]
 	RtlClearBits [0x7729BCAF+191]
 </msg>
-<status status="FAIL" starttime="20240218 23:37:18.149" endtime="20240218 23:37:18.443"/>
+<status status="FAIL" starttime="20240218 23:50:45.488" endtime="20240218 23:50:47.005"/>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<var>${rows}</var>
+<arg>${all_cartoon}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20240218 23:50:47.006" endtime="20240218 23:50:47.006"/>
+</kw>
+<kw name="Get Element Count" library="Selenium2Library">
+<var>${box}</var>
+<arg>${box_cartoon}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20240218 23:50:47.006" endtime="20240218 23:50:47.006"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${box}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20240218 23:37:18.443" endtime="20240218 23:37:18.443"/>
+<status status="NOT RUN" starttime="20240218 23:50:47.006" endtime="20240218 23:50:47.006"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${rows}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20240218 23:37:18.444" endtime="20240218 23:37:18.444"/>
+<status status="NOT RUN" starttime="20240218 23:50:47.007" endtime="20240218 23:50:47.007"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240218 23:37:18.444" endtime="20240218 23:37:18.444"/>
+<status status="NOT RUN" starttime="20240218 23:50:47.007" endtime="20240218 23:50:47.007"/>
 </kw>
-<status status="FAIL" starttime="20240218 23:36:57.089" endtime="20240218 23:37:18.445">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 23:50:47.007" endtime="20240218 23:50:49.228"/>
+</kw>
+<status status="FAIL" starttime="20240218 23:50:30.737" endtime="20240218 23:50:49.228">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="quick-cart-button" type="submit" class="btn-bordered-1st round df aic jcc"&gt;...&lt;/button&gt; is not clickable at point (368, 677). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
   (Session info: chrome=121.0.6167.185)
 Stacktrace:
 	GetHandleVerifier [0x0099E123+48179]
 	(No symbol) [0x00925D01]
 	(No symbol) [0x0080D72D]
-	(No symbol) [0x00811980]
-	(No symbol) [0x008134B2]
-	(No symbol) [0x00813540]
-	(No symbol) [0x00845489]
-	(No symbol) [0x0084586B]
-	(No symbol) [0x0087C5EC]
-	(No symbol) [0x00863CD4]
+	(No symbol) [0x0084AF2B]
+	(No symbol) [0x00849637]
+	(No symbol) [0x0084768B]
+	(No symbol) [0x00846826]
+	(No symbol) [0x0083D770]
+	(No symbol) [0x00863C8C]
+	(No symbol) [0x0083D1AE]
+	(No symbol) [0x00863F24]
 	(No symbol) [0x0087AA1E]
 	(No symbol) [0x00863A26]
 	(No symbol) [0x0083B7BC]
@@ -136,7 +169,7 @@ Stacktrace:
 	RtlClearBits [0x7729BCAF+191]
 </status>
 </test>
-<status status="FAIL" starttime="20240218 23:36:56.815" endtime="20240218 23:37:18.448"/>
+<status status="FAIL" starttime="20240218 23:50:30.444" endtime="20240218 23:50:49.231"/>
 </suite>
 <statistics>
 <total>
